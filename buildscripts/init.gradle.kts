@@ -14,6 +14,8 @@
  *   limitations under the License.
  */
 
+ /*
+
 val ktlintVersion = "0.46.1"
 
 initscript {
@@ -70,3 +72,4 @@ allprojects {
         }
     }
 }
+*/

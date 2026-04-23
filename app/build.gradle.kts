@@ -47,6 +47,7 @@ android {
       isMinifyEnabled = true
       proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
     }
+    /*
     create("benchmark") {
       initWith(getByName("release"))
       signingConfig = signingConfigs.getByName("debug")
@@ -56,6 +57,7 @@ android {
         "proguard-rules-benchmark.pro"
       )
     }
+    */
   }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -67,8 +69,8 @@ android {
     jvmTarget = JavaVersion.VERSION_17.toString()
 
     // Enable Coroutines and Flow APIs
-    freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
-    freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlinx.coroutines.FlowPreview"
+    //freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+    //freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlinx.coroutines.FlowPreview"
   }
   buildFeatures {
     compose = true
